@@ -1,9 +1,12 @@
 {
   "data": [
     {
-      "id": "1",
-      "name": "taakshima",
-      "created": "111111"
+      "id": 1,
+      "title": "trying django tutorial",
+      "author": "k.taka",
+      "content": "anboiaen;boaenb",
+      "created": "",
+      "updated": ""
     }
   ]
 }
