@@ -1,4 +1,20 @@
-<p>
-  news works!
-</p>
-<button (click)="click()">test</button>
+<div class="container">
+  <nb-card *ngFor="let article of articles" class="card" size="small" routerLink="/detail/{{ article.id }}">
+    <nb-card-body>
+
+      <div class="font-row font-main">
+        <div class="header">
+          <div class="name bold">{{ article.title }}</div>
+
+          <div class="variants">
+            <span class="font-w-light">written by</span>
+            <span class="font-w-regular">{{ article.author }}</span>
+          </div>
+        </div>
+        <p>
+          {{ article.content }}
+        </p>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</div>
